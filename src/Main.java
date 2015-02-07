@@ -21,6 +21,11 @@ public class Main {
 		AnotherClass anotherClass = new AnotherClass();
 		// experimenting with variables
 		anotherClass.doSomething();
+		
+		// testing numbers working
+		Calculator a = new Calculator();
+		a.addition(19, 27);
+		a.minus(21, 42);
 		}
 	}
 }
