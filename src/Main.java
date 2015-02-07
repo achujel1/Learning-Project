@@ -16,6 +16,11 @@ public class Main {
 		welcomer.sayHello();
 		// calling a method with an object 
 		welcomer.charExperiment();
+		
+		// testing work with variables
+		AnotherClass anotherClass = new AnotherClass();
+		// experimenting with variables
+		anotherClass.doSomething();
 		}
 	}
 }
