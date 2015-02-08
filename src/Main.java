@@ -26,6 +26,9 @@ public class Main {
 		Calculator a = new Calculator();
 		a.addition(19, 27);
 		a.minus(21, 42);
+		a.convertingDoubleToInt(12.22);
+		a.convertingIntToDouble(10);
+		a.convertingDoubleToIntWithHelperClass(10.54);
 		}
 	}
 }
