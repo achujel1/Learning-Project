@@ -37,6 +37,9 @@ public class Main {
 		// testing comparisong operators
 		anotherClass.comparingStrings("hello", "hello");
 		
+		// working with a character and making it uppercase
+		anotherClass.upperCasePrinter('a');
+
 		}
 	}
 }

@@ -10,4 +10,8 @@ public class AnotherClass {
 			System.out.println(a + " is equal to " + b);
 		}
 	}
+	// method that prints upper case letter
+	public void upperCasePrinter(char a) {
+		System.out.println("Char " + a + " will be uppercase: " + Character.toUpperCase(a));
+	}
 }
