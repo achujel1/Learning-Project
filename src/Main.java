@@ -30,16 +30,19 @@ public class Main {
 		a.convertingIntToDouble(10);
 		a.convertingDoubleToIntWithHelperClass(10.54);
 		
-		// testing commiting with branch
+		// testing committing with branch
 		
 		// testing operators
 		a.addingNumbers(10, 20);
-		// testing comparisong operators
+		// testing comparison operators
 		anotherClass.comparingStrings("hello", "hello");
 		
-		// working with a character and making it uppercase
+		// working with a character and making it upper case
 		anotherClass.upperCasePrinter('a');
 
+		// working with boolean parser from String 
+		a.booleanParser("true");
+		
 		}
 	}
 }

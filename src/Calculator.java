@@ -32,4 +32,10 @@ public class Calculator {
 		System.out.println("Adding two numbers: " + a + " + " + b + " = " + c);
 	}
 	
+	// working with boolean parser
+	public void booleanParser(String s) {
+		// prints false unless given String is "true"
+		System.out.println(Boolean.parseBoolean(s));
+	}
+	
 }
