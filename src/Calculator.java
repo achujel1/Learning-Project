@@ -26,4 +26,10 @@ public class Calculator {
 		System.out.println("Converted integer to double number using helper class: " 
 				+ intResult);
 	}
+	// working with addition operator
+	public void addingNumbers(int a, int b) {
+		int c = a + b;
+		System.out.println("Adding two numbers: " + a + " + " + b + " = " + c);
+	}
+	
 }

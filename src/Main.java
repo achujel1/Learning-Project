@@ -31,6 +31,12 @@ public class Main {
 		a.convertingDoubleToIntWithHelperClass(10.54);
 		
 		// testing commiting with branch
+		
+		// testing operators
+		a.addingNumbers(10, 20);
+		// testing comparisong operators
+		anotherClass.comparingStrings("hello", "hello");
+		
 		}
 	}
 }
