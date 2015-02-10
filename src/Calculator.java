@@ -1,3 +1,5 @@
+// importing Date library
+import java.util.Date;
 
 public class Calculator {
 	public void addition(int a, int b) {
@@ -36,6 +38,18 @@ public class Calculator {
 	public void booleanParser(String s) {
 		// prints false unless given String is "true"
 		System.out.println(Boolean.parseBoolean(s));
+	}
+	
+	// working with string output and date
+	public void dateOutput(String s) {
+		// you can get the class you need by clicking ctrl + space
+		Date date = new Date();
+		System.out.println(s + date);
+	}
+	
+	// working with longs
+	public void longPrinter(long l){
+		System.out.println(l);
 	}
 	
 }

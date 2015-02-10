@@ -43,6 +43,10 @@ public class Main {
 		// working with boolean parser from String 
 		a.booleanParser("true");
 		
+		// working with string and a date output
+		a.dateOutput("some text ");
+		a.longPrinter(100000000000L);
+		
 		}
 	}
 }
