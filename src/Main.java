@@ -23,6 +23,7 @@ public class Main {
 		anotherClass.doSomething();
 		
 		// testing numbers working
+		
 		Calculator a = new Calculator();
 		a.addition(19, 27);
 		a.minus(21, 42);
@@ -43,9 +44,13 @@ public class Main {
 		// working with boolean parser from String 
 		a.booleanParser("true");
 		
-		// working with string and a date output
+		// working with string ansd a date output
 		a.dateOutput("some text ");
 		a.longPrinter(100000000000L);
+		
+		// working with two number addition (calculator)
+		Calculator bi = new Calculator();
+		bi.addingTwoNumbers();
 		
 		}
 	}
