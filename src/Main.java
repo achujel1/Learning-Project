@@ -50,8 +50,13 @@ public class Main {
 		
 		// working with two number addition (calculator)
 		Calculator bi = new Calculator();
-		bi.addingTwoNumbers();
+		// commenting this one because of "three time error"
+//		bi.addingTwoNumbers();
 		
+		// experimenting with conditional sentences
+		bi.ifNumberIsBiggerThen100(115.7);
+		bi.ifStringIsTrue("true");
+
 		}
 	}
 }

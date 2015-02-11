@@ -87,5 +87,24 @@ public class Calculator {
 		}
 	}
 	
+	// method that is using conditional sentence
+	public void ifNumberIsBiggerThen100(double a){
+		if (a > 100) {
+			System.out.println("Your number is more than 100: " + a);
+		} else if (a <= 100 && a >= 10){
+			System.out.println("Your number is between 10 and 100: " + a);
+		} else {
+			System.out.println("Your number is less than 10: " + a);
+		}
+	}
+	
+	// method that is checking if entered String was correct
+	public void ifStringIsTrue(String a){
+		if (a.equals("ture")) {
+			System.out.println("This string is true: " + a);
+		} else {
+			System.out.println("This is not true string: " + a);
+		}
+	}
 
 }
