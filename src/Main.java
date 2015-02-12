@@ -57,6 +57,9 @@ public class Main {
 		bi.ifNumberIsBiggerThen100(115.7);
 		bi.ifStringIsTrue("true");
 
+		bi.switchingAction(20, 10);
+		bi.switchingActionUsingEnums(20, 10);
+		
 		}
 	}
 }

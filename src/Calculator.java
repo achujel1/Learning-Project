@@ -45,6 +45,12 @@ public class Calculator {
 		System.out.println("Adding two numbers: " + a + " + " + b + " = " + c);
 	}
 	
+	// working with minus
+	public void minusNumbers(int a, int b) {
+		int c = a - b;
+		System.out.println(a + " minus " + b + " will be: " + c);
+	}
+	
 	// working with boolean parser
 	public void booleanParser(String s) {
 		// prints false unless given String is "true"
@@ -107,4 +113,36 @@ public class Calculator {
 		}
 	}
 
+	// method to uses switch
+	public void switchingAction(int a, int b) {
+		String input = getInput("Enter the action you want to do (add/minus): ");
+		switch(input) {
+		case "add":
+			addingNumbers(a, b);
+			break;
+		case "minus":
+			minusNumbers(a, b);
+			break;
+		default:
+			System.out.println("You entered not 'add' or 'minus'");
+			break;
+		}
+	}	
+
+	// method that uses switch and enums
+	public void switchingActionUsingEnums(int a, int b) {
+		//String  = getInput("Enter the action you want to do (add/minus): ");
+		Action action = Action.ADDITION;
+		switch(action) {
+		case ADDITION:
+			addingNumbers(a, b);
+			break;
+		case MINUS:
+			minusNumbers(a, b);
+			break;
+		default:
+			System.out.println("You entered not 'add' or 'minus'");
+			break;
+		}
+	}
 }
