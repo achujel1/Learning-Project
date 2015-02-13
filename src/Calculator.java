@@ -145,4 +145,17 @@ public class Calculator {
 			break;
 		}
 	}
+
+	public void testingLoop(){
+		String[] months =
+			{"January", "February", "March",
+			"April", "May", "June",
+			"July", "August", "September",
+			"October", "November", "December"};
+
+
+		for (String month : months) {
+			System.out.println(month);
+		}
+	}
 }

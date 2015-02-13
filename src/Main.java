@@ -60,6 +60,7 @@ public class Main {
 		bi.switchingAction(20, 10);
 		bi.switchingActionUsingEnums(20, 10);
 		
+		bi.testingLoop();
 		}
 	}
 }
