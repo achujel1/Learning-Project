@@ -44,7 +44,7 @@ public class Main {
 		// working with boolean parser from String 
 		a.booleanParser("true");
 		
-		// working with string ansd a date output
+		// working with string and a date output
 		a.dateOutput("some text ");
 		a.longPrinter(100000000000L);
 		
@@ -60,7 +60,7 @@ public class Main {
 		bi.switchingAction(20, 10);
 		bi.switchingActionUsingEnums(20, 10);
 		
-		bi.testingLoop();
+		bi.testingLoops();
 		}
 	}
 }

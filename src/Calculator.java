@@ -145,17 +145,38 @@ public class Calculator {
 			break;
 		}
 	}
-
-	public void testingLoop(){
+	
+	// testing a method with is using loops
+	public void testingLoops(){
 		String[] months =
 			{"January", "February", "March",
 			"April", "May", "June",
 			"July", "August", "September",
 			"October", "November", "December"};
 
+		// testing for loop
+		for (int i = 0; i < months.length; i++) {
+			System.out.println(months[i]);
+		}
 
+		// testing another way to show for loop
 		for (String month : months) {
 			System.out.println(month);
 		}
+
+		// testing while loop with an integer counter
+		int counter = 0;
+		while (counter < months.length){
+			System.out.println(months[counter]);
+			counter++;
+		}
+		
+		// testing a do/while loop with an integer counter1
+		int counter1 = 0;
+		do {
+			System.out.println(months[counter1]);
+			counter1++;
+		} while (counter1 < months.length);
+		
 	}
 }
