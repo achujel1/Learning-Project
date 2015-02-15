@@ -178,5 +178,6 @@ public class Calculator {
 			counter1++;
 		} while (counter1 < months.length);
 		
+		
 	}
 }
