@@ -3,7 +3,25 @@ public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
 		
+		methodOverloadingTest();	
 		
+		System.out.println("Calculator");
+	}
+
+	private static void methodOverloadingTest() {
+		// testing method overloading
+		int value1 = 5;
+		int value2 = 10;
+		int value3 = 15;
+		Calculator a = new Calculator();
+		
+		int result = a.addValues(value1, value2, value3);
+		System.out.println("The result is: " + result);
+
+		String string1 = "10";
+		String string2 = "25";
+		int result2 = a.addValues(string1, string2);
+		System.out.println("The result with string is: " + result2);
 	}
 
 	private static void addingMultipleValues() {
