@@ -178,6 +178,16 @@ public class Calculator {
 			counter1++;
 		} while (counter1 < months.length);
 		
-		
+	}
+
+	// method which's arguments are infinite (not actually)
+	// number of double type arguments
+	public void addMultipleValues(double ... values) {
+        double result = 0d;
+        for (double d : values) {
+                result +=d;
+        }
+        System.out.println("The answer from multiple values are: " + result);
+//        return result;
 	}
 }

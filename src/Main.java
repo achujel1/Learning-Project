@@ -1,18 +1,29 @@
 
 public class Main {
 	public static void main(String[] args) {
-//		helloWorldTest();
-//		argumentsToProgramTest(args);
-//		workingWithMethods();
-//		AnotherClass anotherClass = variablesTest();
-//		Calculator a = numbersTest();
-//		operatorsTest(anotherClass, a);
-//		workingWithStringAndChar(anotherClass, a);
-//		Calculator bi = numberAdditionTest();
-//		conditionalTest(bi);
-//		switchTest(bi);
-//		loopsTest(bi);
+//		testedMethods(args);
+		addingMultipleValues();
 		
+	}
+
+	private static void addingMultipleValues() {
+		// adding multiple values as argument
+		Calculator a = new Calculator();
+		a.addMultipleValues(1, 2, 3, 4, 5, 5, 5);
+	}
+
+	private static void testedMethods(String[] args) {
+		helloWorldTest();
+		argumentsToProgramTest(args);
+		workingWithMethods();
+		AnotherClass anotherClass = variablesTest();
+		Calculator a = numbersTest();
+		operatorsTest(anotherClass, a);
+		workingWithStringAndChar(anotherClass, a);
+		Calculator bi = numberAdditionTest();
+		conditionalTest(bi);
+		switchTest(bi);
+		loopsTest(bi);
 	}
 
 	private static void loopsTest(Calculator bi) {
