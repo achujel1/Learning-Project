@@ -2,7 +2,7 @@
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
-		addingMultipleValues();
+		
 		
 	}
 
@@ -24,6 +24,7 @@ public class Main {
 		conditionalTest(bi);
 		switchTest(bi);
 		loopsTest(bi);
+		addingMultipleValues();
 	}
 
 	private static void loopsTest(Calculator bi) {
