@@ -205,5 +205,23 @@ public class Calculator {
 		int value2 = Integer.parseInt(val2);
 		return value1 + value2;
 	}
+
+	// working with string change
+	// copy by reference in Java
+	public static void changeString(String random){
+		System.out.println("Old string inside the function: " + random);
+		random = "New!";
+		// I see here that String has changed
+		System.out.println("Changed string inside the function: " + random);
+	}
+
+	public static void changeArrayValue(int[] random) {
+		System.out.println("Before change array[0] value inside the function: " + random[0]);
+		// testing if changing the value works inside the function
+		random[0] ++;
+		System.out.println("Changed array[0] value inside the function: " + random[0]);
+	}
+
 }
+
 

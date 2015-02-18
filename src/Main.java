@@ -2,10 +2,30 @@
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
-		
-		methodOverloadingTest();	
+	
+		stringCopyByReferenceTest();
+		arrayCopyByReferenceTest();
 		
 		System.out.println("Calculator");
+	}
+
+	private static void arrayCopyByReferenceTest() {
+		Calculator a = new Calculator();
+		int[] random = {10, 20, 30, 40};
+		System.out.println("Before change array[0] value OUTSIDE the function: " + random[0]);
+		a.changeArrayValue(random);
+		System.out.println("After the change array[0] value OUTSIDE the function: " + random[0]);
+	}
+
+	private static void stringCopyByReferenceTest() {
+		// testing copy reference in Java
+		Calculator a = new Calculator();
+		String something = "Old";
+		System.out.println("String outside the function: " + something);
+		a.changeString(something);
+		// I see here that String hasn't changed
+		// This means that in Java objects are copyied by reference
+		System.out.println("String outside the function: " + something);
 	}
 
 	private static void methodOverloadingTest() {
@@ -43,6 +63,7 @@ public class Main {
 		switchTest(bi);
 		loopsTest(bi);
 		addingMultipleValues();
+		methodOverloadingTest();	
 	}
 
 	private static void loopsTest(Calculator bi) {
