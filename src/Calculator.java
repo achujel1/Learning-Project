@@ -80,7 +80,7 @@ public class Calculator {
 	}
 	
 	// method to get the input
-	private static String getInput(String prompt) {
+	public static String getInput(String prompt) {
 		// this is a buffer reader that 
 		BufferedReader stdin = new BufferedReader(
 				new InputStreamReader(System.in));
@@ -220,6 +220,35 @@ public class Calculator {
 		// testing if changing the value works inside the function
 		random[0] ++;
 		System.out.println("Changed array[0] value inside the function: " + random[0]);
+	}
+
+	public static double divideNumbers(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 / d2;
+		return result;
+	}
+
+	public static double multiplyNumbers(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 * d2;
+		return result;
+	}
+
+	public static double subtractNumbers(String s1, String s2) {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 - d2;
+		return result;
+	}
+
+	public static double addingNumbers(String s1, String s2)
+			throws NumberFormatException {
+		double d1 = Double.parseDouble(s1);
+		double d2 = Double.parseDouble(s2);
+		double result = d1 + d2;
+		return result;
 	}
 
 }

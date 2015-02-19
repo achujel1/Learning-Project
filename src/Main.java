@@ -1,12 +1,57 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
-	
-		stringCopyByReferenceTest();
-		arrayCopyByReferenceTest();
-		
+		calculatorAdditionalTest();
+
 		System.out.println("Calculator");
+	}
+
+	private static void calculatorAdditionalTest() throws NumberFormatException {
+		Calculator a = new Calculator();
+		String s1 = getInput("Enter a numeric value: ");
+		String s2 = getInput("Enter a numeric value: ");
+		String op = getInput("Enter 1=Add, 2=Subtract, 3=Multiply, 4=Divide");
+		
+		int opInt = Integer.parseInt(op);
+		double result = 0;
+
+		switch (opInt) {
+		case 1:
+			result = Calculator.addingNumbers(s1, s2);
+			break;
+		case 2:
+			result = Calculator.subtractNumbers(s1, s2);
+			break;
+		case 3:
+			result = Calculator.multiplyNumbers(s1, s2);
+			break;
+		case 4:
+			result = Calculator.divideNumbers(s1, s2);
+			break;
+
+		default:
+			System.out.println("You entered an incorrect value");
+			break;
+		}
+
+		System.out.println("The answer is " + result);
+	}
+
+	public static String getInput(String prompt) {
+		// this is a buffer reader that 
+		BufferedReader stdin = new BufferedReader(
+				new InputStreamReader(System.in));
+		System.out.print(prompt);
+		System.out.flush();
+		try {
+			return stdin.readLine();
+		} catch(Exception e) {
+			return "Error: " + e.getMessage();
+		}
 	}
 
 	private static void arrayCopyByReferenceTest() {
@@ -64,6 +109,8 @@ public class Main {
 		loopsTest(bi);
 		addingMultipleValues();
 		methodOverloadingTest();	
+		stringCopyByReferenceTest();
+		arrayCopyByReferenceTest();
 	}
 
 	private static void loopsTest(Calculator bi) {
