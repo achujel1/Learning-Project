@@ -269,6 +269,13 @@ public class Calculator {
 		sb.append(s2);
 		System.out.println(sb);
 	}
+	
+	// testing string parsing
+	public static void informationAboutString(String s1, String s2) {
+		System.out.println("Length of the string: " + s1.length());
+		System.out.println("Position of string " + s2 + " is at: " + s1.indexOf(s2));
+		System.out.println("First strsng: " + s1 + ". First string left with only second string: " + s1.substring(s1.indexOf(s2)));
+	}
 
 }
 

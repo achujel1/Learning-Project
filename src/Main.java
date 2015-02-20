@@ -5,10 +5,17 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
+		
+			System.out.println("Calculator");
+	}
 
-		testingWorkWithString();
-		testingStringBuilderClass();
-		System.out.println("Calculator");
+	/**
+	 * 
+	 */
+	private static void testingStringParsing() {
+		
+		Calculator a = new Calculator();
+		a.informationAboutString("Sveiki kaip sekais?", "sekais");
 	}
 
 	/**
@@ -130,6 +137,10 @@ public class Main {
 		stringCopyByReferenceTest();
 		arrayCopyByReferenceTest();
 		calculatorAdditionalTest();
+		testingWorkWithString();
+		testingStringBuilderClass();
+		testingStringParsing();
+
 	}
 
 	private static void loopsTest(Calculator bi) {
