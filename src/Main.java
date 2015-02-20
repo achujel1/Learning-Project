@@ -11,6 +11,7 @@ public class Main {
 	}
 
 	private static void calculatorAdditionalTest() throws NumberFormatException {
+		// this comit was done while being offline
 		Calculator a = new Calculator();
 		String s1 = getInput("Enter a numeric value: ");
 		String s2 = getInput("Enter a numeric value: ");
