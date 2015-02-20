@@ -5,8 +5,9 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
-		
-			System.out.println("Calculator");
+		Calculator a = new Calculator();
+		a.gettingTheDate();
+		System.out.println("Calculator");
 	}
 
 	/**

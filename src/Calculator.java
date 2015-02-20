@@ -277,6 +277,12 @@ public class Calculator {
 		System.out.println("First strsng: " + s1 + ". First string left with only second string: " + s1.substring(s1.indexOf(s2)));
 	}
 
+	// testing how date works
+	public static void gettingTheDate(){
+		Date d = new Date();
+		System.out.println("Today's date: " + d);
+	}
+
 }
 
 
