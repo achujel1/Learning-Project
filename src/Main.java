@@ -7,12 +7,20 @@ public class Main {
 //		testedMethods(args);
 
 		testingWorkWithString();
-
+		testingStringBuilderClass();
 		System.out.println("Calculator");
 	}
 
 	/**
 	 * 
+	 */
+	private static void testingStringBuilderClass() {
+		Calculator a = new Calculator();
+		a.addingToAnother("Sveikas", " gyvas");
+	}
+
+	/**
+	 * Just testing how equals operator works
 	 */
 	private static void testingWorkWithString() {
 		Calculator a = new Calculator();

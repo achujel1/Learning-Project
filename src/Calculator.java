@@ -251,6 +251,7 @@ public class Calculator {
 		return result;
 	}
 
+	// just testing if how equals method works with strings
 	public static void checkingIfEqual(String s1, String s2) {
 		if(s1.equals(s2)){
 			System.out.println(s1 + " is equal to " + s2 + ".");
@@ -259,6 +260,14 @@ public class Calculator {
 		}else {
 			System.out.println("Strings aren't equal!");
 		}
+	}
+
+	// this is just a method to sum two strings into one
+	public static void addingToAnother(String s1, String s2) {
+		StringBuilder sb = new StringBuilder(s1);
+		// Using append String Builder class and append() method
+		sb.append(s2);
+		System.out.println(sb);
 	}
 
 }
