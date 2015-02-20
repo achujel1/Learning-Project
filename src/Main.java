@@ -7,6 +7,7 @@ public class Main {
 //		testedMethods(args);
 		Calculator a = new Calculator();
 		a.gettingTheDate();
+		a.makingStringNull("random");
 		System.out.println("Calculator");
 	}
 

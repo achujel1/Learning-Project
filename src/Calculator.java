@@ -283,6 +283,12 @@ public class Calculator {
 		System.out.println("Today's date: " + d);
 	}
 
+	// making string null
+	public static void makingStringNull(String s1) {
+		s1 = null;
+		System.out.println(s1);
+	}
+
 }
 
 
