@@ -5,9 +5,18 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
-		calculatorAdditionalTest();
+
+		testingWorkWithString();
 
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingWorkWithString() {
+		Calculator a = new Calculator();
+		a.checkingIfEqual("labas", "labAs");
 	}
 
 	private static void calculatorAdditionalTest() throws NumberFormatException {
@@ -112,6 +121,7 @@ public class Main {
 		methodOverloadingTest();	
 		stringCopyByReferenceTest();
 		arrayCopyByReferenceTest();
+		calculatorAdditionalTest();
 	}
 
 	private static void loopsTest(Calculator bi) {

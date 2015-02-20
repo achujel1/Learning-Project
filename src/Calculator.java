@@ -251,6 +251,16 @@ public class Calculator {
 		return result;
 	}
 
+	public static void checkingIfEqual(String s1, String s2) {
+		if(s1.equals(s2)){
+			System.out.println(s1 + " is equal to " + s2 + ".");
+		}else if(s1.equalsIgnoreCase(s2)){
+			System.out.println(s1 + " is equal but not EQUAL to " + s2 + ".");
+		}else {
+			System.out.println("Strings aren't equal!");
+		}
+	}
+
 }
 
 
