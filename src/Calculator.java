@@ -289,6 +289,19 @@ public class Calculator {
 		System.out.println(s1);
 	}
 
+	// testing how code will be handled when error occurs
+	public static void willMakeAnError(){
+		try {
+			String[] random = {"Hello", "Hey"};
+			System.out.println(random[2]);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			// commenting printStackTrace() out just to see a better view
+//			e.printStackTrace();
+			System.out.println("There was an error");
+		}
+	}
+
 }
 
 

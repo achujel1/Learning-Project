@@ -5,10 +5,25 @@ import java.io.InputStreamReader;
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
+		
+		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingErrorHandling() {
+		Calculator a = new Calculator();
+		a.willMakeAnError();
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingDateAndStringError() {
 		Calculator a = new Calculator();
 		a.gettingTheDate();
 		a.makingStringNull("random");
-		System.out.println("Calculator");
 	}
 
 	/**
@@ -142,7 +157,8 @@ public class Main {
 		testingWorkWithString();
 		testingStringBuilderClass();
 		testingStringParsing();
-
+		testingDateAndStringError();
+		testingErrorHandling();
 	}
 
 	private static void loopsTest(Calculator bi) {
