@@ -302,6 +302,13 @@ public class Calculator {
 		}
 	}
 
+	// testing how exception throwing works
+	public static void getArrayItem() 
+		throws ArrayIndexOutOfBoundsException {
+		String[] strings = {"Welcome!"};
+		System.out.println(strings[1]);
+	}
+
 }
 
 

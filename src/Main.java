@@ -6,7 +6,18 @@ public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
 		
+				
 		System.out.println("Calculator");
+	}
+
+	private static void testingExceptionThrowing() {
+		Calculator a = new Calculator();
+		try {
+			a.getArrayItem();
+		} catch (ArrayIndexOutOfBoundsException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Array item was out of bounds!");
+		}
 	}
 
 	/**
@@ -159,6 +170,8 @@ public class Main {
 		testingStringParsing();
 		testingDateAndStringError();
 		testingErrorHandling();
+		testingExceptionThrowing();
+
 	}
 
 	private static void loopsTest(Calculator bi) {
