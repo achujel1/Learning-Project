@@ -1,13 +1,30 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
 		
-				
+		
+
 		System.out.println("Calculator");
+	}
+
+	private static void testingDebugger() {
+		Calculator n = new Calculator();
+		int a;
+		int b;
+		a = 10;
+		b = 20;
+		n.randomTestWithNumbers(a, b);
+		System.out.println("Get some values now" + a + b);
+		b = n.returningOneBigger(b);	
+		System.out.println(b);
+
+		n.debuggerExperiment();
 	}
 
 	private static void testingExceptionThrowing() {
@@ -47,7 +64,7 @@ public class Main {
 	}
 
 	/**
-	 * 
+	 *  
 	 */
 	private static void testingStringBuilderClass() {
 		Calculator a = new Calculator();
@@ -171,7 +188,7 @@ public class Main {
 		testingDateAndStringError();
 		testingErrorHandling();
 		testingExceptionThrowing();
-
+		testingDebugger();
 	}
 
 	private static void loopsTest(Calculator bi) {
@@ -259,6 +276,9 @@ public class Main {
 	private static void helloWorldTest() {
 		System.out.println("Hello world!");
 	}
+
+	
+	
 }
 
 

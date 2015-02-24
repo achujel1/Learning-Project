@@ -3,6 +3,8 @@ import java.util.Date;
 
 // importing other libraries for string input
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 
 public class Calculator {
@@ -309,6 +311,30 @@ public class Calculator {
 		System.out.println(strings[1]);
 	}
 
+	// testing how debugger works
+	public static void debuggerTest(){
+		
+	}
+
+	public static void randomTestWithNumbers(int a, int b) {
+		a = a + 1;
+		b = b + 1;
+	}
+	public int returningOneBigger(int b){
+		return b + 1;
+	}
+
+	// little experiment with debugger
+		public static void debuggerExperiment() {
+			try{
+				URI uri = new URI("http:\\somecompany.com");
+			}catch(URISyntaxException e){
+				System.out.println(e.getMessage());
+			}
+			
+			System.out.println("I'm alive!");
+		}	
+	
 }
 
 
