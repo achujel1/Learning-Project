@@ -325,16 +325,30 @@ public class Calculator {
 	}
 
 	// little experiment with debugger
-		public static void debuggerExperiment() {
-			try{
-				URI uri = new URI("http:\\somecompany.com");
-			}catch(URISyntaxException e){
-				System.out.println(e.getMessage());
-			}
-			
-			System.out.println("I'm alive!");
-		}	
-	
+	public static void debuggerExperiment() {
+        try{
+                URI uri = new URI("http:\\somecompany.com");
+        }catch(URISyntaxException e){
+                System.out.println(e.getMessage());
+        }
+        
+        System.out.println("I'm alive!");
+	}	
+
+	// working with arrays
+	public static void printingAnArray(){
+		int[] a1 = new int[3];
+		// testing how array works
+		for (int i = 0; i < a1.length; i++) {
+			System.out.println(a1[i]);
+		}
+		
+		// you can also declare an array like this
+		int a2[] = new int[3];
+		for (int i = 0; i < a2.length; i++) {
+			System.out.println(a2[i]);
+		}
+	}
 }
 
 

@@ -9,8 +9,14 @@ public class Main {
 //		testedMethods(args);
 		
 		
-
 		System.out.println("Calculator");
+	}
+
+	private static void arrayTesting() {
+		// this is just a way to show how to work with arrays
+		// later will use this in creating a calculator
+		Calculator a = new Calculator();
+		a.printingAnArray();
 	}
 
 	private static void testingDebugger() {
@@ -189,6 +195,8 @@ public class Main {
 		testingErrorHandling();
 		testingExceptionThrowing();
 		testingDebugger();
+		arrayTesting();
+
 	}
 
 	private static void loopsTest(Calculator bi) {
