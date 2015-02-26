@@ -8,10 +8,17 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		
-		
+				
 
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void hashMapTesting() {
+		Calculator a = new Calculator();
+		a.hashMapTesting();
 	}
 
 	/**
@@ -216,6 +223,7 @@ public class Main {
 		arrayTesting();
 		testingHow2DArraysWork();
 		testingHowArrayLitsWork();
+		hashMapTesting();
 
 	}
 

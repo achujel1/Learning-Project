@@ -2,11 +2,13 @@
 import java.util.ArrayList;
 import java.util.Date;
 
+import java.util.HashMap;
 // importing other libraries for string input
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import java.util.HashMap;
 
 public class Calculator {
 	public void addition(int a, int b) {
@@ -397,6 +399,26 @@ public class Calculator {
 		System.out.println("Third value is at position: " + pos);
 	}
 
+	// testing how hashMap works
+	public static void hashMapTesting(){
+		HashMap<String, String> map = new HashMap<String, String>();
+		
+		map.put("California", "Sacremento");
+		map.put("Oregon", "Salem");
+		map.put("Washington", "Olympia");
+		
+		System.out.println(map);
+
+		map.put("Alaska", "Juneau");
+		System.out.println(map);
+		
+		String cap = map.get("Oregon");
+		System.out.println("The capital of Oregon is: " + cap);
+
+		map.remove("California");
+		System.out.println(map);
+
+	}
 
 }
 
