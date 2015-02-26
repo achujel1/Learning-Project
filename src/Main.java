@@ -8,7 +8,9 @@ public class Main {
 	public static void main(String[] args) {
 //		testedMethods(args);
 		
-		
+		Calculator a = new Calculator();
+		a.printing2DArray();
+			
 		System.out.println("Calculator");
 	}
 

@@ -349,6 +349,30 @@ public class Calculator {
 			System.out.println(a2[i]);
 		}
 	}
+
+	// printing an 2D array
+	public static void printing2DArray(){
+		String[][] coordinates = new String[3][2];
+		coordinates[0][0] = "0, 0";
+		coordinates[0][1] = "0, 1";
+		coordinates[1][0] = "1, 0";
+        coordinates[1][1] = "1, 1";
+        coordinates[2][0] = "2, 0";
+        coordinates[2][1] = "2, 1";
+        for (int i = 0; i < coordinates.length; i++) {
+			StringBuilder sb = new StringBuilder();
+			for (int j = 0; j < coordinates[i].length; j++) {
+				if (j == 0) {
+					sb.append("First coordinate is ");
+				} else {
+					sb.append(" and the second is ");
+				}
+				sb.append(coordinates[i][j]);
+			}
+			System.out.println(sb);
+		}
+
+	}
 }
 
 
