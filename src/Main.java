@@ -6,12 +6,28 @@ import java.net.URISyntaxException;
 
 public class Main {
 	public static void main(String[] args) {
-//		testedMethods(args);
+		// testedMethods(args);
 		
+		
+		
+
+		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingHowArrayLitsWork() {
+		Calculator a = new Calculator();
+		a.testingArrayList();
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingHow2DArraysWork() {
 		Calculator a = new Calculator();
 		a.printing2DArray();
-			
-		System.out.println("Calculator");
 	}
 
 	private static void arrayTesting() {
@@ -198,6 +214,8 @@ public class Main {
 		testingExceptionThrowing();
 		testingDebugger();
 		arrayTesting();
+		testingHow2DArraysWork();
+		testingHowArrayLitsWork();
 
 	}
 

@@ -1,4 +1,5 @@
 // importing Date library
+import java.util.ArrayList;
 import java.util.Date;
 
 // importing other libraries for string input
@@ -373,6 +374,30 @@ public class Calculator {
 		}
 
 	}
+
+	// let's see how array list works
+	public static void testingArrayList(){
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("First value");
+		list.add("Second value");
+		list.add("Third value");
+
+		System.out.println(list);
+
+		list.add("Fourth value");
+		System.out.println(list);
+
+		list.remove(0);
+		System.out.println(list);
+		
+		String value = list.get(1);
+		System.out.println("The second value is: " + value);
+
+		int pos =list.indexOf("Third value");
+		System.out.println("Third value is at position: " + pos);
+	}
+
+
 }
 
 
