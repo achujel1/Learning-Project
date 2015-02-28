@@ -1,14 +1,15 @@
 // importing Date library
-import java.util.ArrayList;
-import java.util.Date;
-
-import java.util.HashMap;
 // importing other libraries for string input
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
-
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.Set;
 
 public class Calculator {
 	public void addition(int a, int b) {
@@ -418,6 +419,35 @@ public class Calculator {
 		map.remove("California");
 		System.out.println(map);
 
+	}
+
+	// testing how iterators wokr
+	public static void testingIteratorWorking() {
+		
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("First value");
+		list.add("Second value");
+		list.add("Third value");
+		System.out.println(list);
+		ListIterator<String> listIterator = list.listIterator();
+		while (listIterator.hasNext()) {
+			String value = listIterator.next();
+			System.out.println(value);
+		}
+		
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("First", "value");
+		map.put("Second", "value");
+		map.put("Third", "value");
+		System.out.println(map);
+		Set<String> keys = map.keySet();
+		Iterator<String> iterator = keys.iterator();
+		while (iterator.hasNext()) {
+			String value = iterator.next();
+			System.out.println("The capital of " + value + " is " + map.get(value));
+		}
+
+		
 	}
 
 }

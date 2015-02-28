@@ -8,9 +8,17 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-				
+		
 
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingHowIteratorsWork() {
+		Calculator a = new Calculator();
+		a.testingIteratorWorking();
 	}
 
 	/**
@@ -224,6 +232,7 @@ public class Main {
 		testingHow2DArraysWork();
 		testingHowArrayLitsWork();
 		hashMapTesting();
+		testingHowIteratorsWork();
 
 	}
 
