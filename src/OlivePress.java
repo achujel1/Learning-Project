@@ -1,22 +1,30 @@
-// need to finish this one with other part
+// testing encapsulation with random classes
 public class OlivePress{
-		private Olive[] _olives;
-
-		public void OlivePress(Olive[] olives){
-			this._olives = olives;
-		}
-
-		public OliveOil getOil(){
-			// .. implementation next slide..
-			// here
-			if (_olives == null) {
-				return null;
-				OliveOil oil = new OliveOil();
-				for (Olive olive:olives){
-					olive.crush();
-					oil.add(olive);
-				}
-				return oil;
-			}
-		}
+	private String name;
+	private String surname;
+	private int age;
+	
+	public String getName(){
+		return name;
 	}
+	
+	public String getSurname(){
+		return surname;
+	}
+
+	public int getAge(){
+		return age;
+	}
+
+	public void setName(String newName){
+		name = newName;
+	}
+
+	public void setSurname(String newSurname){
+		surname = newSurname;
+	}
+
+	public void setAge(int newAge){
+		age = newAge;
+	}
+}

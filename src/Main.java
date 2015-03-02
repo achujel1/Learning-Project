@@ -9,8 +9,19 @@ public class Main {
 		// testedMethods(args);
 		
 		
-
+		
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingHowEncapsulationWorks() {
+		OlivePress olive = new OlivePress();
+		olive.setName("random name");
+		olive.setSurname("random surname");
+		olive.setAge(10);
+		System.out.println("Name:" + olive.getName() + "\nSurname: " + olive.getSurname() + "\nAge: " + olive.getAge());
 	}
 
 	/**
@@ -233,7 +244,8 @@ public class Main {
 		testingHowArrayLitsWork();
 		hashMapTesting();
 		testingHowIteratorsWork();
-
+		testingHowEncapsulationWorks();
+		
 	}
 
 	private static void loopsTest(Calculator bi) {
