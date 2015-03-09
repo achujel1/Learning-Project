@@ -14,6 +14,23 @@ public class Main {
 	}
 
 	/**
+	 *	just testing how element passing works in Java 
+	 */
+	private static void testedHowElementPassingWorks() {
+		Calculator a = new Calculator();
+		int c;
+		int b;
+		c = 10;
+		b = 20;
+		// testing how customing a class works
+		b = RandomActions.randomAddition(b);
+		// testing how customing a class works
+		c = RandomActions.randomMinus(c);
+		System.out.println(c);
+		System.out.println(b);
+	}
+
+	/**
 	 * 
 	 */
 	private static void testingHowEncapsulationWorks() {
@@ -245,7 +262,7 @@ public class Main {
 		hashMapTesting();
 		testingHowIteratorsWork();
 		testingHowEncapsulationWorks();
-		
+		testedHowElementPassingWorks();
 	}
 
 	private static void loopsTest(Calculator bi) {
