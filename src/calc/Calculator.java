@@ -451,6 +451,11 @@ public class Calculator {
 		
 	}
 
+	// testing instances of a method
+	public void instanceOfAMethod(){
+		System.out.println("This is an instance of a method!");
+	}
+
 }
 
 

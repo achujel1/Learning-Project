@@ -15,6 +15,14 @@ public class Main {
 	}
 
 	/**
+	 * 
+	 */
+	private static void testingInstancesOfAMethod() {
+		Calculator a = new Calculator();
+		a.instanceOfAMethod();
+	}
+
+	/**
 	 *	just testing how element passing works in Java 
 	 */
 	private static void testedHowElementPassingWorks() {
@@ -264,6 +272,7 @@ public class Main {
 		testingHowIteratorsWork();
 		testingHowEncapsulationWorks();
 		testedHowElementPassingWorks();
+		testingInstancesOfAMethod();
 	}
 
 	private static void loopsTest(Calculator bi) {
