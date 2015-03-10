@@ -1,3 +1,4 @@
+package calc;
 // importing Date library
 // importing other libraries for string input
 import java.io.BufferedReader;
