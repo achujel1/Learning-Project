@@ -17,6 +17,16 @@ public class Main {
 	/**
 	 * 
 	 */
+	private static void testingHowConstructorsWork() {
+		Calculator a = new Calculator();
+		a.mainValuePlusOne();
+		Calculator b = new Calculator(15);
+		b.mainValuePlusOne();
+	}
+
+	/**
+	 * 
+	 */
 	private static void testingInstanceVariables() {
 		Calculator a = new Calculator();
 		a.mainValuePlusOne();
@@ -284,6 +294,7 @@ public class Main {
 		testedHowElementPassingWorks();
 		testingInstancesOfAMethod();
 		testingInstanceVariables();
+		testingHowConstructorsWork();
 	}
 
 	private static void loopsTest(Calculator bi) {

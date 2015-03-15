@@ -16,6 +16,17 @@ public class Calculator {
 
 	private int mainValue = 0;
 
+	public Calculator(int mainValue) {
+		super();
+		this.mainValue = mainValue;
+	}
+
+	public Calculator() {
+		// TODO Auto-generated constructor stub
+		mainValue = 10;
+	}
+	
+
 	public int mainValuePlusOne() {
 		// TODO Auto-generated method stub
 		mainValue = mainValue + 1;
