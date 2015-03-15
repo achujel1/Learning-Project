@@ -10,8 +10,18 @@ public class Main {
 		// testedMethods(args);
 		
 		
-
+		
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingGettersAndSetters() {
+		Calculator a = new Calculator();
+		System.out.println(a.getMainValue());
+		a.mainValuePlusOne();
+		System.out.println(a.getMainValue());
 	}
 
 	/**
@@ -295,6 +305,7 @@ public class Main {
 		testingInstancesOfAMethod();
 		testingInstanceVariables();
 		testingHowConstructorsWork();
+		testingGettersAndSetters();
 	}
 
 	private static void loopsTest(Calculator bi) {
