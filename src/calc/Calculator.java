@@ -14,7 +14,9 @@ import java.util.Set;
 
 public class Calculator {
 
-	private int mainValue = 0;
+	public static final int MAINVALUE = 0;
+
+	private int mainValue = Calculator.MAINVALUE;
 
 	public int getMainValue() {
 		return mainValue;
