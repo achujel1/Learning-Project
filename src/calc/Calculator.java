@@ -13,6 +13,16 @@ import java.util.ListIterator;
 import java.util.Set;
 
 public class Calculator {
+
+	private int mainValue = 0;
+
+	public int mainValuePlusOne() {
+		// TODO Auto-generated method stub
+		mainValue = mainValue + 1;
+		System.out.println(mainValue);
+		return mainValue;
+	}
+
 	public void addition(int a, int b) {
 			System.out.println(a + b);
 	}

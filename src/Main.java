@@ -10,8 +10,18 @@ public class Main {
 		// testedMethods(args);
 		
 		
-		
+
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingInstanceVariables() {
+		Calculator a = new Calculator();
+		a.mainValuePlusOne();
+		a.mainValuePlusOne();
+		a.mainValuePlusOne();
 	}
 
 	/**
@@ -273,6 +283,7 @@ public class Main {
 		testingHowEncapsulationWorks();
 		testedHowElementPassingWorks();
 		testingInstancesOfAMethod();
+		testingInstanceVariables();
 	}
 
 	private static void loopsTest(Calculator bi) {
