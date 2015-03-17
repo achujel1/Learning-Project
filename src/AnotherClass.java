@@ -14,4 +14,8 @@ public class AnotherClass {
 	public void upperCasePrinter(char a) {
 		System.out.println("Char " + a + " will be uppercase: " + Character.toUpperCase(a));
 	}
+
+	public void randomMethod(char b){
+		System.out.println("random");
+	}
 }
