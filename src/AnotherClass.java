@@ -18,4 +18,5 @@ public class AnotherClass {
 	public void randomMethod(char b){
 		System.out.println("random");
 	}
+	
 }
