@@ -3,13 +3,29 @@ import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import calc.Addition;
+import calc.AdditionTwo;
 import calc.Calculator;
 
 public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
+		
+
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingInheritance() {
+		Calculator a = new Calculator(10.20);
+		System.out.println(a.getNumber());
+		Addition b = new Addition(20.20);
+		System.out.println(b.getNumber());
+		AdditionTwo c = new AdditionTwo(30.30);
+		System.out.println(c.getNumber());
 	}
 
 	/**
@@ -305,6 +321,7 @@ public class Main {
 		testingInstanceVariables();
 		testingHowConstructorsWork();
 		testingGettersAndSetters();
+		testingInheritance();
 	}
 
 	private static void loopsTest(Calculator bi) {

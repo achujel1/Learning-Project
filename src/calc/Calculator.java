@@ -16,7 +16,22 @@ public class Calculator {
 
 	public static final int MAINVALUE = 0;
 
+	double number;
+
 	private int mainValue = Calculator.MAINVALUE;
+
+	public Calculator(double number){
+		System.out.println("number is: " + number);
+		setNumber(number);
+	}
+
+	public void setNumber(double number){
+		this.number = number;
+	}
+
+	public double getNumber(){
+		return number;
+	}
 
 	public int getMainValue() {
 		return mainValue;
