@@ -5,4 +5,8 @@ public class AdditionTwo extends Calculator{
 		this.setNumber(number);
 	}
 	
+	public AdditionTwo(String name){
+		super(10.35);
+		System.out.println(SURNAME);
+	}
 }

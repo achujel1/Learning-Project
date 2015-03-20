@@ -11,7 +11,8 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		
+		Addition a = new Addition("what is up?");
+		AdditionTwo t = new AdditionTwo("what's up?");
 
 		System.out.println("Calculator");
 	}
