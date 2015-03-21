@@ -11,10 +11,19 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		Addition a = new Addition("what is up?");
-		AdditionTwo t = new AdditionTwo("what's up?");
+		Addition a = new Addition();
+		a.addingNumbers(10, 5);
+
 
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingExtendingOfClasses() {
+		Addition a = new Addition("what is up?");
+		AdditionTwo t = new AdditionTwo("what's up?");
 	}
 
 	/**
@@ -323,6 +332,7 @@ public class Main {
 		testingHowConstructorsWork();
 		testingGettersAndSetters();
 		testingInheritance();
+		testingExtendingOfClasses();
 	}
 
 	private static void loopsTest(Calculator bi) {
