@@ -16,7 +16,7 @@ public class Calculator {
 
 	public static final int MAINVALUE = 0;
 	protected static final String NAME = "this is your name";
-	protected static final String SURNAME = "this is your surname";
+	protected static final String SURNAME = "this is your surnam";
 
 	double number;
 
