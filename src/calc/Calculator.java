@@ -505,5 +505,3 @@ public class Calculator {
 	}
 
 }
-
-

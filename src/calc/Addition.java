@@ -18,4 +18,8 @@ public class Addition extends Calculator {
 		System.out.println(a - b);
 //		super.addingNumbers(a, b);
 	}
+
+	public void methodInAddition(){
+		System.out.println("this is a method which is in addition class");
+	}
 }

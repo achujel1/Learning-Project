@@ -11,11 +11,25 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		Addition a = new Addition();
-		a.addingNumbers(10, 5);
-
+		
 
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testedCastingObject() {
+		Calculator a = new Addition();
+		((Addition)a).methodInAddition();
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingAdditionRandom() {
+		Addition a = new Addition();
+		a.addingNumbers(10, 5);
 	}
 
 	/**
@@ -333,6 +347,8 @@ public class Main {
 		testingGettersAndSetters();
 		testingInheritance();
 		testingExtendingOfClasses();
+		testingAdditionRandom();
+		testedCastingObject();
 	}
 
 	private static void loopsTest(Calculator bi) {
