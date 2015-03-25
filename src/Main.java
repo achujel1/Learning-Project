@@ -11,8 +11,8 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		// soon some code
-		
+		Calculator a = new Calculator();
+		a.sumOfTheArray(A);
 
 		System.out.println("Calculator");
 	}

@@ -1,6 +1,7 @@
 package calc;
 
 public class Addition extends Calculator {
+
 	public Addition(){
 		
 	}

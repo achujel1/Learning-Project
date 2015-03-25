@@ -12,6 +12,8 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Set;
 
+import com.lynda.olivepress.olives.Olive;
+
 public class Calculator {
 
 	public static final int MAINVALUE = 0;
@@ -502,6 +504,16 @@ public class Calculator {
 	// testing instances of a method
 	public void instanceOfAMethod(){
 		System.out.println("This is an instance of a method!");
+	}
+
+	public int sumOfTheArray(ArrayList<Addition> numbers){
+		int sumOfTheNumbersArray = 0;
+		
+		for (Addition olive : numbers) {
+			sumOfTheNumbersArray += number;
+		}
+		
+		return sumOfTheNumbersArray;
 	}
 
 }
