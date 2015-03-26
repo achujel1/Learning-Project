@@ -12,7 +12,6 @@ import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.Set;
 
-import com.lynda.olivepress.olives.Olive;
 
 public class Calculator {
 

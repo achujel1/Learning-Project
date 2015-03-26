@@ -3,6 +3,7 @@ import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import calc.ActionAdding;
 import calc.Addition;
 import calc.AdditionTwo;
 import calc.Calculator;
@@ -11,10 +12,18 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
-		Calculator a = new Calculator();
-		a.sumOfTheArray(A);
-
+		
+		
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingHowInterfaceWorks() {
+		ActionAdding a = new ActionAdding();
+		a.addingTwoNumbers(10, 20);
+		a.multiplyingTwoNumber(10, 20);
 	}
 
 	/**
@@ -350,6 +359,7 @@ public class Main {
 		testingExtendingOfClasses();
 		testingAdditionRandom();
 		testedCastingObject();
+		testingHowInterfaceWorks();
 	}
 
 	private static void loopsTest(Calculator bi) {
