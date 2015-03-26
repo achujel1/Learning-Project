@@ -14,7 +14,6 @@ public class Main {
 		// testedMethods(args);
 		
 		
-		
 		System.out.println("Calculator");
 	}
 
