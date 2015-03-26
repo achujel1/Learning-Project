@@ -1,7 +1,5 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import calc.ActionAdding;
 import calc.Addition;
@@ -13,10 +11,17 @@ import calc.files.NetworkWriting;
 public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
-		
-		
-		
+
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingNetworkReading() {
+		NetworkWriting nw = new NetworkWriting();
+		nw.networkReading("value",
+				"http://services.explorecalifornia.org/rss/tours.php");
 	}
 
 	/**
@@ -49,7 +54,7 @@ public class Main {
 	 */
 	private static void testedCastingObject() {
 		Calculator a = new Addition();
-		((Addition)a).methodInAddition();
+		((Addition) a).methodInAddition();
 	}
 
 	/**
@@ -120,7 +125,7 @@ public class Main {
 	}
 
 	/**
-	 *	just testing how element passing works in Java 
+	 * just testing how element passing works in Java
 	 */
 	private static void testedHowElementPassingWorks() {
 		Calculator a = new Calculator();
@@ -144,7 +149,8 @@ public class Main {
 		olive.setName("random name");
 		olive.setSurname("random surname");
 		olive.setAge(10);
-		System.out.println("Name:" + olive.getName() + "\nSurname: " + olive.getSurname() + "\nAge: " + olive.getAge());
+		System.out.println("Name:" + olive.getName() + "\nSurname: "
+				+ olive.getSurname() + "\nAge: " + olive.getAge());
 	}
 
 	/**
@@ -194,7 +200,7 @@ public class Main {
 		b = 20;
 		n.randomTestWithNumbers(a, b);
 		System.out.println("Get some values now" + a + b);
-		b = n.returningOneBigger(b);	
+		b = n.returningOneBigger(b);
 		System.out.println(b);
 
 		n.debuggerExperiment();
@@ -231,7 +237,7 @@ public class Main {
 	 * 
 	 */
 	private static void testingStringParsing() {
-		
+
 		Calculator a = new Calculator();
 		a.informationAboutString("Sveiki kaip sekais?", "sekais");
 	}
@@ -258,7 +264,7 @@ public class Main {
 		String s1 = getInput("Enter a numeric value: ");
 		String s2 = getInput("Enter a numeric value: ");
 		String op = getInput("Enter 1=Add, 2=Subtract, 3=Multiply, 4=Divide");
-		
+
 		int opInt = Integer.parseInt(op);
 		double result = 0;
 
@@ -285,24 +291,28 @@ public class Main {
 	}
 
 	public static String getInput(String prompt) {
-		// this is a buffer reader that 
-		BufferedReader stdin = new BufferedReader(
-				new InputStreamReader(System.in));
+		// this is a buffer reader that
+		BufferedReader stdin = new BufferedReader(new InputStreamReader(
+				System.in));
 		System.out.print(prompt);
 		System.out.flush();
 		try {
 			return stdin.readLine();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			return "Error: " + e.getMessage();
 		}
 	}
 
 	private static void arrayCopyByReferenceTest() {
 		Calculator a = new Calculator();
-		int[] random = {10, 20, 30, 40};
-		System.out.println("Before change array[0] value OUTSIDE the function: " + random[0]);
+		int[] random = { 10, 20, 30, 40 };
+		System.out
+				.println("Before change array[0] value OUTSIDE the function: "
+						+ random[0]);
 		a.changeArrayValue(random);
-		System.out.println("After the change array[0] value OUTSIDE the function: " + random[0]);
+		System.out
+				.println("After the change array[0] value OUTSIDE the function: "
+						+ random[0]);
 	}
 
 	private static void stringCopyByReferenceTest() {
@@ -322,7 +332,7 @@ public class Main {
 		int value2 = 10;
 		int value3 = 15;
 		Calculator a = new Calculator();
-		
+
 		int result = a.addValues(value1, value2, value3);
 		System.out.println("The result is: " + result);
 
@@ -351,7 +361,7 @@ public class Main {
 		switchTest(bi);
 		loopsTest(bi);
 		addingMultipleValues();
-		methodOverloadingTest();	
+		methodOverloadingTest();
 		stringCopyByReferenceTest();
 		arrayCopyByReferenceTest();
 		calculatorAdditionalTest();
@@ -380,6 +390,7 @@ public class Main {
 		testingHowInterfaceWorks();
 		testingFileManagement();
 		testedNetworkFileManagement();
+		testingNetworkReading();
 	}
 
 	private static void loopsTest(Calculator bi) {
@@ -410,9 +421,9 @@ public class Main {
 		// working with a character and making it upper case
 		anotherClass.upperCasePrinter('a');
 
-		// working with boolean parser from String 
+		// working with boolean parser from String
 		a.booleanParser("true");
-		
+
 		// working with string and a date output
 		a.dateOutput("some text ");
 		a.longPrinter(100000000000L);
@@ -427,7 +438,7 @@ public class Main {
 
 	private static Calculator numbersTest() {
 		// testing numbers working
-		
+
 		Calculator a = new Calculator();
 		a.addition(19, 27);
 		a.minus(21, 42);
@@ -450,14 +461,14 @@ public class Main {
 		Welcomer welcomer = new Welcomer();
 		// calling a method of an object
 		welcomer.sayHello();
-		// calling a method with an object 
+		// calling a method with an object
 		welcomer.charExperiment();
 	}
 
 	private static void argumentsToProgramTest(String[] args) {
 		// getting to know how many arguments are passes to program
 		System.out.println("Number of args: " + args.length);
-		
+
 		// printing out arguments
 		for (int i = 0; i < args.length; i++) {
 			System.out.println(args[i]);
@@ -468,8 +479,4 @@ public class Main {
 		System.out.println("Hello world!");
 	}
 
-	
-	
 }
-
-
