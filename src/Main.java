@@ -8,13 +8,23 @@ import calc.Addition;
 import calc.AdditionTwo;
 import calc.Calculator;
 import calc.files.FileWriting;
+import calc.files.NetworkWriting;
 
 public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 		
 		
+		
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testedNetworkFileManagement() {
+		NetworkWriting n = new NetworkWriting();
+		n.fileWriting();
 	}
 
 	/**
@@ -369,6 +379,7 @@ public class Main {
 		testedCastingObject();
 		testingHowInterfaceWorks();
 		testingFileManagement();
+		testedNetworkFileManagement();
 	}
 
 	private static void loopsTest(Calculator bi) {
