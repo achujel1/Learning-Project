@@ -7,6 +7,7 @@ import calc.ActionAdding;
 import calc.Addition;
 import calc.AdditionTwo;
 import calc.Calculator;
+import calc.files.FileWriting;
 
 public class Main {
 	public static void main(String[] args) {
@@ -15,6 +16,14 @@ public class Main {
 		
 		
 		System.out.println("Calculator");
+	}
+
+	/**
+	 * 
+	 */
+	private static void testingFileManagement() {
+		FileWriting f = new FileWriting();
+		f.fileWriting();
 	}
 
 	/**
@@ -360,6 +369,7 @@ public class Main {
 		testingAdditionRandom();
 		testedCastingObject();
 		testingHowInterfaceWorks();
+		testingFileManagement();
 	}
 
 	private static void loopsTest(Calculator bi) {
