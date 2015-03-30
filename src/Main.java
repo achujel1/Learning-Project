@@ -11,7 +11,6 @@ public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
 
-		// making and accessing jars
 		
 
 		System.out.println("Calculator");
