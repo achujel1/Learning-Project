@@ -17,6 +17,10 @@ import org.xml.sax.SAXException;
 
 public class NetworkWriting implements FileInterface {
 
+	/* (non-Javadoc)
+	 * @see calc.files.FileInterface#fileWriting()
+	 * This is an app for getting the files
+	 */
 	@Override
 	public void fileWriting() {
 		try {
@@ -46,6 +50,13 @@ public class NetworkWriting implements FileInterface {
 		}
 	}
 
+	/**
+	 * This is a method which is generating a String values out of your specified webpage
+	 * 
+	 * @param searchedValue - String value of your search
+	 * @param url - url of the web page
+	 * 
+	 */
 	public void networkReading(String searchedValue, String url) {
 		try {
 			DocumentBuilderFactory factory = DocumentBuilderFactory

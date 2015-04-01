@@ -7,6 +7,11 @@ import calc.Calculator;
 import calc.files.FileWriting;
 import calc.files.NetworkWriting;
 
+/**
+ * This is a simple application for learning purposes
+ * @author Adminas
+ * @version 1.0
+ */
 public class Main {
 	public static void main(String[] args) {
 		// testedMethods(args);
@@ -17,7 +22,7 @@ public class Main {
 	}
 
 	/**
-	 * 
+	 * This is a method which is working with network reading
 	 */
 	private static void testingNetworkReading() {
 		NetworkWriting nw = new NetworkWriting();

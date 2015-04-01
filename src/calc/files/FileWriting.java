@@ -11,6 +11,10 @@ import java.io.OutputStream;
 import org.apache.commons.io.FileUtils;
 
 public class FileWriting implements FileInterface{
+	/* (non-Javadoc)
+	 * @see calc.files.FileInterface#fileWriting()
+	 * This is an app
+	 */
 	public void fileWriting(){
         try {
 			File f1 = new File("newFile.txt");
